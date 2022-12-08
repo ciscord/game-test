@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock, Paper, Scissors - Casiimir, by The Project Odin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="play-mode">
+        <input type="radio" id="computer" name="fav_language" value="computer">
+        <label for="computer">Computer</label><br>
+        <input type="radio" id="human" name="fav_language" value="human">
+        <label for="human">Human</label><br>
+        <label for="name">Name</label><br>
+        <input type="test" id="name" name="fav_language" value="">
+        
+    </div>
+    <div class="container text-center my-5">
+      <p>Make your choiche</p>
+      <button class="btn btn-choiche rock" name="Rock">
+      </button>
+      <button class="btn btn-choiche paper" name="Paper">
+      </button>
+      <button class="btn btn-choiche scissor" name="Scissor">
+      </button>
+    </div>
+
+    <div class="row my-5">
+      <div class="col-6 text-center">
+        <h1 class="player-points">0</h1>
+        <h5 class="player-choiche">You</h5>
+      </div>
+      <div class="col-6 text-center">
+        <h1 class="computer-points">0</h1>
+        <h5 class="computer-choiche">Computer</h5>
+      </div>
+    </div>
+
+
+    <div class="container text-center">
+      <h6 class="show-status"></h6>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+    <script src="game.js"></script>
+    <script src="Player.js"></script>
+  </body>
+</html>
